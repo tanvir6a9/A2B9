@@ -1,3 +1,6 @@
+body{
+    margin: 20px;
+}
 .header-dad{
     display: flex;
     justify-content: center;
@@ -6,6 +9,8 @@
 .header{
     display: flex;
     width: 90%;
+    padding: 50px 20px;
+    
 }
 .header1{
     display: flex;
@@ -27,7 +32,7 @@
 .primary-color{
     color: rgb(253, 79, 4);
 }
-  
+
 
 }
              /* header-menu related style */
@@ -48,6 +53,197 @@
     color: gray;
     font-size: small;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+@media screen and (max-width:600px){
+    .menu-child{
+        display: none;
+        
+    }
+}
+    
+}
+@media screen and (max-width:600px) {
+    .header1{
+        width: 100%;
+    }
+    
+}
+                           /* banner picture */
+                             /* banner part */
+.gradient-overlay {
+  position: relative;
+  width: 100%;
+  border-radius: 16px;
+  height:500px; /* Adjust the height as needed */
+  background: url(Images/main.png) center/cover no-repeat; /* Set your image */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+.content h1{
+    color: #FFF;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 64px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
+
+
+
+               /* banner button */
+.buttion-items{
+display: flex;
+padding: 5px;
+display: inline-flex;
+padding: 16px;
+align-items: flex-start;
+gap: 24px;
+border-radius: 8px;
+background: rgba(255, 255, 255, 0.30);
+}     
+.buttons {
+width: 174px;
+height: 52px;
+flex-shrink: 0;
+border-radius: 8px;
+background: #FFF;
+border: none;
+text-align: center;
+}
+.buttons-4 {
+width: 174px;
+height: 52px;
+flex-shrink: 0;
+border-radius: 8px;
+background: rgb(253, 79, 4);
+
+border: none;
+
 
 }
-                           /* main picture */
+@media screen and (max-width:600px){
+.buttion-items{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+}
+
+@media screen and (max-width:600px){
+.content h1{
+    color: #FFF;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 20px;
+font-style: normal;
+/* font-weight: 800; */
+line-height: normal;
+}
+}  
+                     /* 2n section */
+
+.section-2nd{
+    display: flex;
+    width: 100%;
+    border: 2px solid red;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.Our-Popular{
+   
+    border: 2px solid red;
+}
+.Our-Popular h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.read-more-2nd{
+    position: relative;
+   
+}
+@media screen and (max-width:600px) {
+
+.section-2nd{
+        display: flex;
+       flex-direction: column;
+}
+}
+
+                       /* Destination 2nd */
+.Destination2n{
+    text-align: center;
+    width: 100%;
+    padding-top:30px ;
+    padding-bottom:30px ;
+}  
+  .Destination2n h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }                  
+                       /* 4rt section */
+  
+    .hotel-service{
+        display: flex;
+        column-gap: 10px;
+       
+    }
+    .hotel{
+        padding: 30px;
+        border-radius: 15px;
+        border: 1px solid rgba(251, 181, 99, 0.20);
+
+background: rgba(251, 181, 99, 0.05);
+    }
+    
+    .service {
+        padding: 30px;
+        border-radius: 15px;
+        border: 1px solid rgba(41, 206, 246, 0.20);
+
+background: rgba(41, 206, 246, 0.05);
+        background: rgba(41, 206, 246, 0.05);
+    }
+    @media screen and (max-width:600px) {
+
+        .hotel-service{
+        display: flex;
+        flex-direction: column;
+        column-gap: ;
+        }
+
+    }
+    .mapsection-dad{
+        display: flex;
+        padding-top: 15px;
+        justify-content: center;
+        justify-content: center;
+       
+        width: 100%;
+    }
+    .mapsection{
+        border-radius: 16px;
+border: 1px solid rgba(233, 68, 68, 0.20);
+
+background: rgba(233, 68, 68, 0.05);
+        padding-top: 150px;
+        border-radius: 15px;
+        padding: 15px;
+        width: 580px;
+       
+    }

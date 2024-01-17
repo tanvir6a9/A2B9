@@ -6,7 +6,39 @@
     <title>Document</title>
     <link rel="stylesheet" href="styleA2.css">
     <style>
-       
+                     /* complex section */
+           .parent {
+display: grid;
+/* padding: 50px; */
+grid-template-columns: repeat(10, 1fr);
+grid-template-rows: repeat(15, 1fr);
+gap: 5px;
+padding: 20px;
+justify-content: center;
+align-items: center;
+justify-items: center;
+
+
+}
+
+
+.div1 { grid-area: 1 / 1 / 6 / 6; }
+.div2 { grid-area: 6 / 1 / 11 / 4; }
+.div3 { grid-area: 1 / 6 / 6 / 11; }
+.div4 { grid-area: 6 / 4 / 11 / 9; }
+.div5 { grid-area: 11 / 1 / 16 / 5; }
+.div6 { grid-area: 6 / 9 / 11 / 11; }
+.div7 { grid-area: 11 / 5 / 16 / 11; }
+@media screen and (max-width:600px){
+    .parent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+                            /* complex section end */
     </style>
 
 </head>
@@ -30,8 +62,89 @@
              </div>
         </div>
     </header>
-                             <!-- picture section -->
+                             <!-- banner section -->
        
-                                                                  
+    <main>
+        <div class="gradient-overlay">
+            <div class="overlay"></div>
+            <div class="content">
+              <h1>Explor Your Travel</h1>
+              <p>Take public transportation. Traveling is not just about getting to your destination, but everything you see along the way.</p>
+              <div class="buttion-items">
+                <input type="text" class="buttons 1" placeholder="where go">
+                <input type="text" class="buttons 2" placeholder="when">
+                <input type="text" class="buttons 3" placeholder="select type">
+                <button class="buttons-4">Find Now</button>
+          
+              </div>
+            </div>
+          </div>
+                                    <!-- 2nd section -->
+                <div class="section-2nd">
+                  <div class="Our-Popular">
+                    <div>
+                        <h1>Our Popular Tours</h1>
+                    <p>Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
+                     <ul>
+                        <li>Tempus euismod lacus mauris dignissim quis in ultrices. Magna nullam odio neque diam. Sociis erat at .
+
+                        </li>
+                        <li>Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.</li>
+                        <li>Accumsan eget et turpis praesent lorem egestas enim elit bibendum. Risus at in.</li>
+                        <p>Amet consectetur. Vulputate commodo felis molestie risus 
+                            ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. Id bibendum nunc senectus semper tincidunt. </p>
+
+                     </ul>
+                    </div>
+                     <div class="read-more-2nd"> <button class="buttons-4">Read more</button></div>
+                  </div>
+                  <div class="2nd-img"><img src="Images/mount fuji.png" alt=""></div>
+                     
+                </div>
+                <!-- Destination 2nd -->
+                <div class="Destination2n">
+                    <h1>Choose Your Destination</h1>
+                    <p>Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
+                </div>
+                                    <!-- comlpex part -->
+        <div class="parent">
+            <div class="div1"> <img src="Images/Rectangle 1.png" alt=""></div>
+            <div class="div2"> <img src="Images/Rectangle 2.png" alt=""></div>
+            <div class="div3"><img src="Images/Rectangle 3.png" alt=""> </div>
+            <div class="div4"><img src="Images/Rectangle 4.png" alt=""></div>
+            <div class="div5"> <img src="Images/Rectangle 5.png" alt=""></div>
+            <div class="div6"><img src="Images/Rectangle 6.png" alt=""> </div>
+            <div class="div7"> <img src="Images/Rectangle 7.png" alt=""></div>
+
+        </div>
+                                    <!-- description3rd -->
+         <div class="Destination2n">
+            <h1>Why Choose Us</h1>
+            <p>Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
+        </div>   
+                                <!-- 4rt section                                      -->
+          <div class="hotel-service">
+            <div class="hotel"><img src="Images/hotel 1.svg" alt=""><br>
+            <h1>Handpicked Hotels</h1><br>
+        <p>Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p></div>
+            <div class="service"><img src="Images/map 1.svg" alt=""><h1>World Class Service</h1><br><p>Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p></div>
+    
+           </div>
+           <div class="mapsection-dad">
+            <div class="mapsection"><img src="Images/price-tag 1.svg" alt=""><br>
+             <h1>Handpicked Hotels</h1><br>
+         <p>Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p></div>   
+            </div> 
+                                  <!-- description4rd -->
+
+        <!-- <div class="Destination2n">
+            <h1>Deals & Discounts </h1>
+            <p>Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
+        </div>    -->
+
+    </main> 
+    <footer>
+            
+    </footer>                                            
 </body>
 </html>
